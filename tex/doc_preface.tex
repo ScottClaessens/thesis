@@ -1,0 +1,130 @@
+\pagenumbering{alph}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%% Title Page %%%%%%%%%%%%%%%%%%%%
+\begin{titlepage}
+\thispagestyle{empty}\enlargethispage{\the\footskip}%
+\begin{center}
+    \vspace*{1in}
+    {\setstretch{1.66}{\large\textbf{\maintitle}}\par }%
+    \vskip 1.3in
+    {\MakeUppercase{\myname}}
+    \vskip 1.3in
+    
+    \begin{doublespace}
+    {\small A thesis submitted in fulfilment of the} \\
+    {\small requirements for the degree of} \\ [.08in]
+    \end{doublespace}
+    
+    \MakeUppercase{\small DOCTOR OF PHILOSOPHY} \\[.1in]
+    {\small in} \\[.1in]
+    {\small \mydiscipline} \\[.25in]
+    {\small \myuniversity} \\[.1in]
+    {\small \mygraddate} \\[.8in]
+    
+    \begin{doublespace}
+    {\small This thesis is for examination purposes only} \\
+    {\small and is confidential to the examination process.} \\ [.08in]
+    \end{doublespace}
+\end{center}
+\vskip .5in
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% Approved names %%%%%%%%%%%%%%%%%%
+% \begin{center}
+% \begin{doublespace}
+% Approved:\\
+% \Chair\\
+% \Advisor \\
+% \OtherInternalMember \\
+% \ExternalMember \\
+% \end{doublespace}
+% \end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% Uncomment for Signatures %%%%%%%%%%%%%%
+%Approved: \hskip 2.9in Date:\\[1.2em]
+% \hskip -0.24in Approved: \hskip 2.85in Date:\\[1.2em]
+% \rule{3.5in}{.5pt} \hskip 0.1in \rule{2in}{.5pt} \\[.01in]
+% \Chair \\[.14in]
+% \rule{3.5in}{.5pt} \hskip 0.1in \rule{2in}{.5pt}  \\[.01in]
+% \Advisor \\[.14in]
+% \rule{3.5in}{.5pt} \hskip 0.1in \rule{2in}{.5pt} \\[.01in]
+% \OtherInternalMember \\[.14in]
+% \rule{3.5in}{.5pt} \hskip 0.1in \rule{2in}{.5pt} \\[.01in]
+% \ExternalMember \\[.14in]
+% \\[.14in]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{titlepage}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% Copyright page %%%%%%%%%%%%%%%%%%
+%\thispagestyle{empty}%\enlargethispage{\the\footskip}%
+%\vspace*{\fill}
+%\begin{center}
+%Copyright \copyright ~\mypubyear~by \myname\\
+%All Rights Reserved
+%\end{center}
+%\vspace*{\fill}
+%\clearpage
+
+
+\mySpacing
+\pagenumbering{roman} \setcounter{page}{2}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%% Abstract page %%%%%%%%%%%%%%%%%%%
+
+\chapter*{Abstract}
+\label{ch:Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\vspace{7mm}
+\input{tex/abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%% Dedication page %%%%%%%%%%%%%%%%%%
+
+\chapter*{}
+\addcontentsline{toc}{chapter}{Dedication}
+\vspace{7mm}
+\vspace*{\fill}
+\begin{center}
+\input{tex/dedication}
+\end{center}
+\vspace*{\fill}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Acknowledgements page %%%%%%%%%%%%%%%
+
+\chapter*{Acknowledgements}
+\label{ch:Acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+\vspace{7mm}
+\input{tex/acknowledgements}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%% Table of contents %%%%%%%%%%%%%%%%%
+
+\begin{singlespace}
+\tableofcontents
+\end{singlespace}
+
+%\clearpage
+%\addcontentsline{toc}{chapter}{\listtablename}
+%\listoftables
+%
+%\clearpage
+%\addcontentsline{toc}{chapter}{\listfigurename}
+%\listoffigures
+
+\clearpage
+\normalsize
+\mySpacing
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\cftlocalchange{toc}{450pt}{0cm} %see tocloft documentation
+\cftlocalchange{toc}{1.55em}{2.55em}

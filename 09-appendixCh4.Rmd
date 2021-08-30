@@ -1,0 +1,151 @@
+# Appendix to Chapter 4: Supplementary Materials
+
+## Supplementary Figures
+
+(ref:ch4plotHistCaption) _Support for New Zealand political parties on a 7-point Likert scale (1 = strongly oppose, 7 = strongly support)._
+
+```{r ch4plotHist, echo=FALSE, warning=F, message=F, fig.width=6, fig.height=5, fig.cap="(ref:ch4plotHistCaption)", dev='cairo_pdf'}
+readd(ch4_plotHist)
+```
+
+\newpage
+
+\FloatBarrier
+
+(ref:ch4plotImputeCaption) _Density plots showing imputed values from 10 multiply imputed datasets (pink) against observed values (blue)._
+
+```{r ch4plotImpute, echo=FALSE, warning=F, message=F, fig.width=10, fig.height=10, fig.cap="(ref:ch4plotImputeCaption)"}
+readd(ch4_plotImpute)
+```
+
+\newpage
+
+\FloatBarrier
+
+(ref:ch4plotBeastSlopesCaption) _Slopes for the BEAST task predicting political party support._ Posterior slopes for the BEAST task predicting New Zealand political party support, from the multilevel model without socio-demographic controls. Political parties are ranked from the most socially progressive (top) to the most socially conservative (bottom), as estimated by @PoliticalCompass2020. Densities represent posterior distributions, points represent medians, and lines represent 50% and 95% credible intervals.
+
+```{r ch4plotBeastSlopes, echo=FALSE, warning=F, message=F, fig.width=5, fig.height=4, fig.cap="(ref:ch4plotBeastSlopesCaption)", dev='cairo_pdf'}
+readd(ch4_plotBeastSlopes)
+```
+
+\newpage
+
+\FloatBarrier
+
+(ref:ch4plotBeastCaption) _BEAST score weakly positively predicts support for the New Zealand First Party (1 = strongly oppose, 7 = strongly support)._ The line represents the median regression line predicting political party support from a fixed-effects regression without socio-demographic controls, the shaded area represents the 95% credible interval.
+
+```{r ch4plotBeast, echo=FALSE, warning=F, message=F, fig.width=5, fig.height=4, fig.cap="(ref:ch4plotBeastCaption)"}
+readd(ch4_plotBeast)
+```
+
+\newpage
+
+\FloatBarrier
+
+(ref:ch4plotm1Caption) _The relationships between the cooperative phenotype and political party support (1 = strongly oppose, 7 = strongly support)._ Lines are median regression lines predicting political party support from our primary multilevel models, shaded areas are 95% credible intervals.
+
+```{r ch4plotm1, echo=FALSE, warning=F, message=F, fig.width=7, fig.height=5, fig.cap="(ref:ch4plotm1Caption)", dev='cairo_pdf'}
+readd(ch4_plotm1)
+```
+
+\newpage
+
+\FloatBarrier
+
+(ref:ch4plotm2Caption) _The relationships between average BEAST scores and political party support (1 = strongly oppose, 7 = strongly support)._ Lines are median regression lines predicting political party support from our primary multilevel models, shaded areas are 95% credible intervals.
+
+```{r ch4plotm2, echo=FALSE, warning=F, message=F, fig.width=7, fig.height=5, fig.cap="(ref:ch4plotm2Caption)", dev='cairo_pdf'}
+readd(ch4_plotm2)
+```
+
+\newpage
+
+\FloatBarrier
+
+(ref:ch4plotm3Caption) _The relationships between gender and political party support (1 = strongly oppose, 7 = strongly support)._ Points are median regression predictions for political party support from our primary multilevel models, error bars represent 95% credible intervals.
+
+```{r ch4plotm3, echo=FALSE, warning=F, message=F, fig.width=7, fig.height=5, fig.cap="(ref:ch4plotm3Caption)", dev='cairo_pdf'}
+readd(ch4_plotm3)
+```
+
+\newpage
+
+\FloatBarrier
+
+(ref:ch4plotm4Caption) _The relationships between age (standardised) and political party support (1 = strongly oppose, 7 = strongly support)._ Lines are median regression lines predicting political party support from our primary multilevel models, shaded areas are 95% credible intervals.
+
+```{r ch4plotm4, echo=FALSE, warning=F, message=F, fig.width=7, fig.height=5, fig.cap="(ref:ch4plotm4Caption)", dev='cairo_pdf'}
+readd(ch4_plotm4)
+```
+
+\newpage
+
+\FloatBarrier
+
+(ref:ch4plotm5Caption) _The relationships between ethnicity and political party support (1 = strongly oppose, 7 = strongly support)._ Points are median regression predictions for political party support from our primary multilevel models, error bars represent 95% credible intervals.
+
+```{r ch4plotm5, echo=FALSE, warning=F, message=F, fig.width=7, fig.height=5, fig.cap="(ref:ch4plotm5Caption)", dev='cairo_pdf'}
+readd(ch4_plotm5)
+```
+
+\newpage
+
+\FloatBarrier
+
+(ref:ch4plotm6Caption) _The relationships between religiosity and political party support (1 = strongly oppose, 7 = strongly support)._ Points are median regression predictions for political party support from our primary multilevel models, error bars represent 95% credible intervals.
+
+```{r ch4plotm6, echo=FALSE, warning=F, message=F, fig.width=7, fig.height=5, fig.cap="(ref:ch4plotm6Caption)", dev='cairo_pdf'}
+readd(ch4_plotm6)
+```
+
+\newpage
+
+\FloatBarrier
+
+(ref:ch4plotm7Caption) _The relationships between education (standardised) and political party support (1 = strongly oppose, 7 = strongly support)._ Education is standardised and modelled as a monotonic effect. Higher values indicate increasing education. Lines are median regression lines predicting political party support from our primary multilevel models, shaded areas are 95% credible intervals.
+
+```{r ch4plotm7, echo=FALSE, warning=F, message=F, fig.width=7, fig.height=5, fig.cap="(ref:ch4plotm7Caption)", dev='cairo_pdf'}
+readd(ch4_plotm7)
+```
+
+\newpage
+
+\FloatBarrier
+
+(ref:ch4plotm8Caption) _The relationships between socio-economic index (standardised) and political party support (1 = strongly oppose, 7 = strongly support)._ Socio-economic index is measured by NZSEI 2013, which is coded according to occupation categories. Higher values indicate higher socio-economic status. Lines are median regression lines predicting political party support from our primary multilevel models, shaded areas are 95% credible intervals.
+
+```{r ch4plotm8, echo=FALSE, warning=F, message=F, fig.width=7, fig.height=5, fig.cap="(ref:ch4plotm8Caption)", dev='cairo_pdf'}
+readd(ch4_plotm8)
+```
+
+\newpage
+
+\FloatBarrier
+
+(ref:ch4plotm9Caption) _The relationships between local deprivation (standardised) and political party support (1 = strongly oppose, 7 = strongly support)._ Local deprivation is measured by NZDep, a measure of local deprivation in meshblock areas in New Zealand. Higher values indicate greater local deprivation. Lines are median regression lines predicting political party support from our primary multilevel models, shaded areas are 95% credible intervals.
+
+```{r ch4plotm9, echo=FALSE, warning=F, message=F, fig.width=7, fig.height=5, fig.cap="(ref:ch4plotm9Caption)", dev='cairo_pdf'}
+readd(ch4_plotm9)
+```
+
+\newpage
+
+\FloatBarrier
+
+## Supplementary Tables
+
+(ref:ch4itemTableCaption) _Self-report items from the New Zealand Attitudes and Values Study._
+
+```{r ch4itemTable, echo=F, warning=F, message=F}
+knitr::kable(
+  readd(ch4_itemTable),
+  format = "latex",
+  booktabs = TRUE,
+  longtable = TRUE,
+  caption = "(ref:ch4itemTableCaption)",
+  escape = FALSE
+  ) %>%
+  kable_styling(font_size = 10) %>%
+  column_spec(1, width = "8em") %>%
+  column_spec(2, width = "26em")
+```

@@ -1,0 +1,80 @@
+# Appendix to Chapter 6: Supplementary Materials
+
+## Supplementary Figures
+
+(ref:ch6plotUtilityCaption) _Predictions from multilevel model containing payoff and normative utility components._ (_a_) The fixed effect parameter capturing the payoff utility component implies that participants are more likely to choose the non-selfish option if the difference in payoffs between the non-selfish and selfish options is smaller. (_b_) The fixed effect parameter capturing the normative utility component implies that participants are more likely to choose the non-selfish option if the non-selfish option is rated as more socially appropriate than the selfish option. Lines are posterior median regression lines from Bayesian multilevel regression, shaded areas are 95% credible intervals.
+
+```{r ch6plotUtility, echo=FALSE, warning=F, message=F, fig.width=8, fig.height=4, fig.cap="(ref:ch6plotUtilityCaption)"}
+readd(ch6_plotUtility)
+```
+
+\newpage
+
+\FloatBarrier
+
+(ref:ch6plotUtilityVarCaption) _Variation in payoff and normative utility component parameters across participants._ (_a_) Variation in the payoff utility component across participants. (_b_) Variation in the normative utility component across participants. Each line is the model-implied slope for each participant (_N_ = `r printnum(nrow(readd(ch6_d)))`).
+
+```{r ch6plotUtilityVar, echo=FALSE, warning=F, message=F, fig.width=8, fig.height=4, fig.cap="(ref:ch6plotUtilityVarCaption)"}
+readd(ch6_plotUtilityVar)
+```
+
+\newpage
+
+\FloatBarrier
+
+(ref:ch6plotInequalityAversionCaption) _Predictions from multilevel model containing "inequality aversion" utility component._ The fixed effect parameter capturing the inequality aversion utility component implies that participants are more likely to choose the non-selfish option if the difference in equality between the selfish and non-selfish option is greater (i.e., the non-selfish option leads to a more equal distribution). Lines are posterior median regression lines from Bayesian multilevel regression, shaded areas are 95% credible intervals.
+
+```{r ch6plotInequalityAversion, echo=FALSE, warning=F, message=F, fig.width=4, fig.height=4, fig.cap="(ref:ch6plotInequalityAversionCaption)"}
+readd(ch6_plotInequalityAversion)
+```
+
+\newpage
+
+\FloatBarrier
+
+(ref:ch6plotInequalityAversionVarCaption) _Variation in inequality aversion utility component across participants._ Each line is the model-implied slope for each participant (_N_ = `r printnum(nrow(readd(ch6_d)))`).
+
+```{r ch6plotInequalityAversionVar, echo=FALSE, warning=F, message=F, fig.width=4, fig.height=4, fig.cap="(ref:ch6plotInequalityAversionVarCaption)"}
+readd(ch6_plotInequalityAversionVar)
+```
+
+\newpage
+
+\FloatBarrier
+
+## Supplementary Tables
+
+(ref:ch6tableSelfReportCaption) _Self-report items included in the study._
+
+```{r ch6tableSelfReport, echo=F, warning=F, message=F}
+knitr::kable(
+  readd(ch6_tableSelfReport),
+  format = "latex",
+  booktabs = TRUE,
+  longtable = TRUE,
+  caption = "(ref:ch6tableSelfReportCaption)"
+  ) %>%
+  kable_styling(font_size = 10) %>%
+  column_spec(1, width = "6em") %>%
+  column_spec(2, width = "24em") %>%
+  column_spec(3, width = "8em")
+```
+
+\newpage
+
+\FloatBarrier
+
+(ref:ch6tableMiniDGCaption) _Mini Dictator Games included in the study._ Participants made a binary choice between two possible splits of 60 points between themselves and another participant. This series of games was taken from @Panizza2019.
+
+```{r ch6tableMiniDG, echo=F, warning=F, message=F}
+knitr::kable(
+  readd(ch6_tableMiniDG), 
+  format = "latex",
+  booktabs = TRUE,
+  caption = "(ref:ch6tableMiniDGCaption)"
+  ) %>%
+  kable_styling(font_size = 10) %>%
+  column_spec(1, width = "7em") %>%
+  column_spec(2, width = "12em") %>%
+  column_spec(3, width = "12em")
+```
